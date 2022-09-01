@@ -1,0 +1,89 @@
+---
+title: "GitHub Pages Tutorial"
+author: "Krista Dulany"
+date: "2022-09-02"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
+    theme: sandstone
+    highlight: tango
+    fig_width: 3
+    fig_height: 2
+    
+##First part of an rmarkdown page is the YAML header. This is where you title the page, add an author "add your name", and you can set the date - 2 options system date or a publish date
+
+##Output is how you set the type of document that is exported. This is also where you can add features like styles, tables of contents, and figure dimensions
+
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+# Getting Started With Git Hub
+
+## Git
+* A version control system
+* Tracks history of changes for individuals or collaborative teams
+*Git repositories (or projects) encompass all files and folders associated with a project along with each files revision history
+
+* *information from LASER institute*
+
+## GitHub 
+* a web-based platform that hosts Git repositories
+* provides a collaborative, community-based development environment
+* provides an extensive ecosystem for software workflows
+* *information from LASER institute*
+
+## GitHub Desktop
+* A way to interface with Git repositories and files local on your computer
+* *information from LASER institute*
+
+## R Studio
+* Interface to write script and R markdown files
+* Can develop programs to analyze data
+* Use to create R Markdown documents to host webpages
+
+
+# R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+**More Formatting References**
+https://rmarkdown.rstudio.com/authoring_basics.html
+https://bookdown.org/yihui/rmarkdown/html-document.html
+
+
+
+```{r}
+
+#install.packages("readxl")
+#install.packages("knitr")
+#install.packages("tidyverse")
+
+#library(readxl)
+#library(knitr)
+#library(tidyverse)
+
+```
+
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
