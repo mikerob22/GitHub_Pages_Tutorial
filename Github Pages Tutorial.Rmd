@@ -11,10 +11,6 @@ output:
     highlight: tango
     fig_width: 3
     fig_height: 2
-    
-##First part of an rmarkdown page is the YAML header. This is where you title the page, add an author "add your name", and you can set the date - 2 options system date or a publish date
-
-##Output is how you set the type of document that is exported. This is also where you can add features like styles, tables of contents, and figure dimensions
 
 ---
 
@@ -24,41 +20,108 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-# Getting Started With Git Hub
+The purpose of this document is to serve as a guide and a reference to develop a R Markdown document into an HTML format to host online using GitHub Pages.
 
-## Git
+# Introduction to Git Hub
+
+## Git, GitHub, and R Studio
+This information is provided by the LASER institute
+
+**Git**
+
 * A version control system
 * Tracks history of changes for individuals or collaborative teams
-*Git repositories (or projects) encompass all files and folders associated with a project along with each files revision history
+* Git repositories (or projects) encompass all files and folders associated with a project along with each files revision history
 
-* *information from LASER institute*
+**GitHub**
 
-## GitHub 
 * a web-based platform that hosts Git repositories
 * provides a collaborative, community-based development environment
 * provides an extensive ecosystem for software workflows
-* *information from LASER institute*
 
-## GitHub Desktop
+**GitHub Desktop**
+
 * A way to interface with Git repositories and files local on your computer
-* *information from LASER institute*
 
-## R Studio
+**R Studio**
+
 * Interface to write script and R markdown files
 * Can develop programs to analyze data
 * Use to create R Markdown documents to host webpages
 
+**R Markdown**
+
+*Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents.
+
+## GitHub Getting Started
+
+### Github Profile 
+
+Go to the EQuIPD GitHub page: https://github.com/UF-EQuIPDGrant
+
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/EQuIPD_Profile.png)
+
+Repositories shows all the repositories that the person or organization has created or forked (made a personal copy from another source). We will talk about cloning and forking in a moment. For this tutorial we will be using **GitHub_Pages_Tutorial** repository.
+https://github.com/UF-EQuIPDGrant/GitHub_Pages_Tutorial
+
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/Repositories.png)
+
+### Creating a New Repository
+
+We will briefly walk through creating a new repository. This is the process you would take when you wanted to start a new project to analyze data or create a GitHub page on your own. 
+
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/New Repo.png)
+
+
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/New Repo_2.png){width=75%}
+
+### Forking Versus Cloning
+
+**For this session,** we will be using the **GitHub_Pages_Tutorial** repository as a base. You will now go through the process of creating your own copy of the repository to work in. This is helpful when you have found a resource or are working with a team on a project in GitHub. 
+
+There is an important distinction between cloning a repository and forking a repository.You need to think about how you are working the owner of the repository.
+
+**Cloning** is the act of creating a linked version of the repository local to your account and computer through GitHub desktop. This option is great if you are collaborating with a team to develop something together. The main version is updated by the group. 
+
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/Cloning.png)
+
+**Forking** is the act of creating your own copy that is not linked to others. This is a great option when you are wanting to modify a repository or project that you found online or if you are working together but not needing to keep a single version. Information and updates from the original will still update from the original source. *In our case we will be Forking our repository so everyone has their own version and we do not overwrite each other.* 
+
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/Forking_1.png){width=75%}
+
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/Forking_2.png){width=75%}
+
+Once you create your fork 
+
+
+
 
 # R Markdown
-
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+First thing we are going to do is "knit" this document using the knit button at the top of the window. Knitting is rendering the R Markdown file into the designated form. In our case, we are using R Markdown to create an html document. You can use this to create word documents, presentations, pdf, and more. 
+
+We will then see this document in a preview window and we are then going to select "Open in Browser" to view the HTML document in a browser window. This will be a reference for us as we move through the document to see what the R Markdown code and formatting looks like in its final form. 
+
+
+
+# Formatting 
+
+## YAML Header
+
+The Ffrst part of an R Markdown page is the YAML header. This is where you title the page, add an author "add your name", and you can set the date - 2 options system date or a publish date
+
+Output is how you set the type of document that is exported. This is also where you can add features like styles, tables of contents, and figure dimensions
+
 
 **More Formatting References**
 https://rmarkdown.rstudio.com/authoring_basics.html
 https://bookdown.org/yihui/rmarkdown/html-document.html
 
+# Code Chunks
+Code Chunks are used to run code to complete an analysis. If you want to create a document that steps students through a programming activity, you could use something like this.
 
-
+To insert a code chunk, go to Code> Insert Chunk or use the following shortcuts depending on your device: Ctrl + Alt + I (Cmd + Option + I on macOS).
 ```{r}
 
 #install.packages("readxl")
