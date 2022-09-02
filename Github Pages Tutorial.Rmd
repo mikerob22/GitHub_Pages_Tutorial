@@ -91,34 +91,51 @@ There is an important distinction between cloning a repository and forking a rep
 
 ![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/Forking_2.png){width=75%}
 
-Once you create your fork 
+Once you create your forked repository we then move to GitHub Desktop
+
+### GitHub Desktop
+
+GitHub desktop is the interface between R Studio and GitHub. When updates are made by the host of the repository or updates are made by you, the changes are documented and shown in GitHub desktop. History provides information on who, when, and what was updated. This is part of the version control. If your repository is forked then the only updates are coming from the main page and you. If you have a cloned repository, you will see updates from your collaborators. 
+
+Use Fetch/Pull to get new information from the main server. Use Commit to update or Push your changes to the repository. You must enter a small description to be able to commit the changes. You will then be prompted to Push that information. You will see the updates online on GitHub. 
+
+Use open in RStudio to open the project in an editor workspace or use Show in Finder toview the documents in this repository. 
+
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/GitHub Desktop.png){width=75%}
+
+When you drop down the selection tool to navigate between repositories, there should be a forked symbol next to the GitHub Pages Tutorial repository. A book symbol notifies that a repository is a clone. 
 
 
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/Fork v Clone.png){width=75%}
 
+Let's move into the basics of R Markdown.
 
-# R Markdown
+# R Markdown Formatting
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 First thing we are going to do is "knit" this document using the knit button at the top of the window. Knitting is rendering the R Markdown file into the designated form. In our case, we are using R Markdown to create an html document. You can use this to create word documents, presentations, pdf, and more. 
 
 We will then see this document in a preview window and we are then going to select "Open in Browser" to view the HTML document in a browser window. This will be a reference for us as we move through the document to see what the R Markdown code and formatting looks like in its final form. 
 
-
-
-# Formatting 
-
 ## YAML Header
 
-The Ffrst part of an R Markdown page is the YAML header. This is where you title the page, add an author "add your name", and you can set the date - 2 options system date or a publish date
+The first part of an R Markdown page is the YAML header. This is where you title the page, add an author, set the date, and choose a file type to process into. 
+
+**YAML IMAGE HERE**
+
+## Output
 
 Output is how you set the type of document that is exported. This is also where you can add features like styles, tables of contents, and figure dimensions
-
 
 **More Formatting References**
 https://rmarkdown.rstudio.com/authoring_basics.html
 https://bookdown.org/yihui/rmarkdown/html-document.html
 
-# Code Chunks
+## Image Insert
+
+
+
+### Code Chunks
 Code Chunks are used to run code to complete an analysis. If you want to create a document that steps students through a programming activity, you could use something like this.
 
 To insert a code chunk, go to Code> Insert Chunk or use the following shortcuts depending on your device: Ctrl + Alt + I (Cmd + Option + I on macOS).
@@ -150,3 +167,15 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# Publishing to GitHub Pages
+
+Knit
+Commit
+Go to GitHub Online
+
+Click repository name
+Settings 
+Public
+ Main Branch
+ 
