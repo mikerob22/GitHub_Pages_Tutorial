@@ -14,13 +14,13 @@ output:
 
 ---
 
-![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/EQuIPD logo_horizontal.png)
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/EQuIPD logo_horizontal.png){width=75%}
 
 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-
+##Knitting
 ```
 
 The purpose of this document is to serve as a guide and a reference to develop a R Markdown document into an HTML format to host online using GitHub Pages.
@@ -54,7 +54,7 @@ This information is provided by the LASER institute
 
 **R Markdown**
 
-*Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents.
+* Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents.
 
 ## GitHub Getting Started
 
@@ -116,33 +116,108 @@ Let's move into the basics of R Markdown.
 # R Markdown Formatting
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-First thing we are going to do is "knit" this document using the knit button at the top of the window. Knitting is rendering the R Markdown file into the designated form. In our case, we are using R Markdown to create an html document. You can use this to create word documents, presentations, pdf, and more. 
+First thing we are going to do for this tutorial is "knit" this document using the knit button at the top of the window. Knitting is rendering the R Markdown file into the designated form. In our case, we are using R Markdown to create an html document. You can use this to create word documents, presentations, pdf, and more. 
 
-We will then see this document in a preview window and we are then going to select "Open in Browser" to view the HTML document in a browser window. This will be a reference for us as we move through the document to see what the R Markdown code and formatting looks like in its final form. 
+We will then see this document in a preview window and we are then going to select "Open in Browser" to view the HTML document in a browser window. This will be a reference for us as we move through the document to see what the R Markdown code and formatting looks like in its final form. Knitting while building your document allows you to preview the document and view it for any bugs or test new features. 
 
 ## YAML Header
 
-The first part of an R Markdown page is the YAML header. This is where you title the page, add an author, set the date, and choose a file type to process into. 
+The first part of an R Markdown page is the YAML header. This is where you title the page, add an author, set the date, and choose a file type to process into. YAML allows you to format the output of the document you are producing with elements like themes, various types of tables of contents, section numbering, and figure sizes. 
 
-**YAML IMAGE HERE**
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/Knit.png){width=75%}
 
-## Output
+YAML stands for: YAML Ain't Markup Language™ and is a human-friendly data serialization language for all programming languages.
 
-Output is how you set the type of document that is exported. This is also where you can add features like styles, tables of contents, and figure dimensions
+This resource provides a good amount of information on formatting your document. 
+https://bookdown.org/yihui/rmarkdown/html-document.html
+
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/YAML.png){width=50%}
+
+### Update the YAML header
+
+We are going to change the author to your name, as this is your version of the document. Do that by writing your name in place of mine in the header. Now knit the document to update and view your changes.
+
+We are now going to change the theme of the document.Choose a theme from the options below and replace sandstone:
+cerulean
+cosmo
+readable
+
+Knit the document to view the changes. 
+Themes are locatated here: https://www.datadreaming.org/post/r-markdown-theme-gallery/
 
 **More Formatting References**
+https://www.datadreaming.org/post/r-markdown-theme-gallery/
 https://rmarkdown.rstudio.com/authoring_basics.html
 https://bookdown.org/yihui/rmarkdown/html-document.html
 
+## Text Formatting
+
+You write in the R Markdown the same way you would write in a word processor. 
+
+Reference for basic  text formatting https://rmarkdown.rstudio.com/lesson-8.html 
+
+### Bold & Italics
+
+**Bold** - double asterix before and after the word or phrase
+
+*Italics* - single asterix before and after the word or phrase 
+
+### Paragraph Spacing
+
+To make paragraphs or new lines of text, there needs to be a line added between the text. 
+
+No spacing:
+
+This is sentence 1.
+This is sentence 2. 
+
+New Paragraph:
+
+This is sentence 1.
+
+This is sentence 2.
+
+### Headers
+
+To designate section headers, we use the pound (#) symbol at the start of a new line. The number of symbols indicates the layer of heading and the enumeration (if added). There must be a space between the last # and the first letter of the heading. 
+
+One # - Main Heading
+
+Two ## - Sub Heading
+
+Three ### - Sub - Sub Heading
+
+### Links
+
+You can paste in links as they are and they automatically hyperlink https://rmarkdown.rstudio.com/lesson-8.html 
+
+To jump to sections in the document use the following code: [Section Header]. The name of the section within the brackets needs to match a section name exactly, else it will not work. 
+
+[Text Formatting] Click the link to hop back to text formatting.
+
 ## Image Insert
 
+A big part of a webpage is displaying images or documents. Use the piece of code below to display images and preview word or PDF documents. *Note* the viewer for PDF is very shallow and shows a small portion of the page.
 
 
-### Code Chunks
-Code Chunks are used to run code to complete an analysis. If you want to create a document that steps students through a programming activity, you could use something like this.
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/Insert Image.png){width=50%}
+
+We are going to grab the file path to insert a cute alligator into the page. 
+To grab the file path, go to the file, select get info, and copy the file path. 
+
+Documents > GitHub > GitHub_Pages_Tutorial > Images > Gator.png
+
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/Image Steps.png)
+
+
+### Inserting Code Chunks
+Code Chunks are used to run code in your document. If you want to create a document that steps students through a programming activity, you could use something like this.
 
 To insert a code chunk, go to Code> Insert Chunk or use the following shortcuts depending on your device: Ctrl + Alt + I (Cmd + Option + I on macOS).
+
 ```{r}
+#Below is code you would use to install packages to do certain tasks in R. They are commented out because we do not need them for this tutorial
+
 
 #install.packages("readxl")
 #install.packages("knitr")
@@ -158,20 +233,33 @@ To insert a code chunk, go to Code> Insert Chunk or use the following shortcuts 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
 ```{r cars}
+##Summary table of "cars" data
 summary(cars)
 ```
 
-## Including Plots
+### Including Plots
 
 You can also embed plots, for example:
 
 ```{r pressure, echo=FALSE}
+
 plot(pressure)
+
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
+There are other ways to plot data in R. That would require a whole separate training. The most common way is using ggplot.
+
 # Publishing to GitHub Pages
+
+Now that we have our document ready to go we are going to want to host it for others to view. GitHub hosts webpages through GitHub pages. This feature is available for free when accounts and repositories are set to public. 
+
+1. We are going to Save our R Markdown File
+
+2. Then we are going to Knit the page
+
+3. Then we go to GitHub Desktop and Commit the edits and updates to the repository
 
 Knit
 Commit
@@ -181,4 +269,14 @@ Click repository name
 Settings 
 Public
  Main Branch
+ 
+
+# Additional Resources
+
+**Cheatsheet**
+https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf 
+
+**Formatting References**
+https://rmarkdown.rstudio.com/authoring_basics.html
+https://bookdown.org/yihui/rmarkdown/html-document.html
  
