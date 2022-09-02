@@ -253,7 +253,7 @@ There are other ways to plot data in R. That would require a whole separate trai
 
 # Publishing to GitHub Pages
 
-Now that we have our document ready to go we are going to want to host it for others to view. GitHub hosts webpages through GitHub pages. This feature is available for free when accounts and repositories are set to public. 
+Now that we have our document ready to go we are going to want to host it for others to view. GitHub hosts webpages through GitHub pages. **This feature is available for free when accounts and repositories are set to public.**
 
 1. We are going to Save our R Markdown File
 
@@ -261,14 +261,28 @@ Now that we have our document ready to go we are going to want to host it for ot
 
 3. Then we go to GitHub Desktop and Commit the edits and updates to the repository
 
-Knit
-Commit
-Go to GitHub Online
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/KnitCommit.png)
 
-Click repository name
-Settings 
-Public
- Main Branch
+4. Go to **your** GitHub page on the browser 
+
+5. Select the GitHub Pages Tutorial Repository in your profile
+
+6. Open the **Settings** option
+
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/Fork Settings.png)
+
+7. Select Pages from the left hand menu
+
+8. For your page to be active, you need to identify which **branch** to publish. In our case, we only have one **main**. Press save. 
+
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/Branch.png)
+
+9. Be patient and refresh and your webpage. A link will display at the top. This is what you would publish or share with your content. This is what your final knitted version will look like.
+
+10. This will update as you work on your content in R markdown. Follow steps 1-3 to update your page. *Note: There is a bit of a delay in updating across so hang in there and it will eventually refresh and load.*
+
+![](/Users/kristadulany/Documents/GitHub/GitHub_Pages_Tutorial/Tutorial Images/Pages Live.png)
+**Congratulations you just hosted your first GitHub Page!**
  
 
 # Additional Resources
