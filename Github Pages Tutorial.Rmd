@@ -7,7 +7,7 @@ output:
     toc: true
     toc_float: true
     number_sections: true
-    theme: sandstone
+    theme: cerulean
     highlight: tango
     fig_width: 3
     fig_height: 2
@@ -304,4 +304,23 @@ https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
 **Formatting References**
 https://rmarkdown.rstudio.com/authoring_basics.html
 https://bookdown.org/yihui/rmarkdown/html-document.html
+
+# Goldberg Gator Engineering Explorers Camp - Undergraduate Experience 
+
+Given the opportunity to travel to three different schools around Florida, I was able to gain tons of teaching experience!
+
+
+## Camps
+
+### Sarasota Camp
+
+![](Tutorial Images/SOTA.png)
+
+## West Palm Beach Camp
+
+![](Tutorial Images/WPB.png)
+
+## Immokalee Camp
+
+![](Tutorial Images/IMOK.png)
  
